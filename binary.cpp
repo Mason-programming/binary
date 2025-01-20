@@ -2,7 +2,9 @@
 #include <string>
 using namespace std;
 
-void binary(int num, string binaryNum){
+void binary(int num, string binaryNum)
+{
+
 int sum = 0;
     
    if (num != 0){
@@ -22,16 +24,18 @@ int sum = 0;
 }
 
 int main(){
+
 	while(true){    
         cout << "enter a number: ";
-        int n;
+
+        int n = 0;
         cin >> n;
-	if(n == 'x'){
-		break;
-	}else{
-            binary(n, " ");
-        }
-        
+
+        if(!cin){
+            break;
+        }else{
+                binary(n, " ");
+            }
     }
     
     return 0;
